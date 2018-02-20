@@ -84,12 +84,10 @@ func menu4() {
         print(game.title)
     }
     
-    var checkOut = readLine()
+    let checkOut = readLine()
     
     if checkOut?.lowercased().range(of:"subnautica") != nil {
         print("Subnautica has been checked out")
-    } else {
-        print("Error try again")
     }
     if checkOut?.lowercased().range(of:"abzu") != nil {
         print("ABZU has been checked out")
@@ -105,10 +103,9 @@ func menu4() {
     }
     if checkOut?.lowercased().range(of:"payday 2") != nil {
         print("PayDay 2 has been checked out")
-    } else {
-        print("try again")
     }
     if checkOut != nil {
     print("Please return" + " " +  "\(dueDate())")
     }
 }
+

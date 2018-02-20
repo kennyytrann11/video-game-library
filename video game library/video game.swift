@@ -18,10 +18,6 @@ class VideoGames {
     var price: Double
     var checkedOut: Bool
     
-    func gameTitle() -> String {
-        return "ok"
-    }
-    
     init(genre: String, title: String, releaseDate: String, developer: String, publisher: String, price: Double, checkedOut: Bool) {
         self.genre = genre
         self.title = title
